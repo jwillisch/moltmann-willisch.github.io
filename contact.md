@@ -6,10 +6,14 @@ permalink: /contact/
 
 # Kontakt aufnehmen
 
-Ich freue mich auf Ihre Nachricht und stehe Ihnen gerne für ein unverbindliches Beratungsgespräch zur Verfügung. Kontaktieren Sie mich telefonisch, per E-Mail oder nutzen Sie das untenstehende Kontaktformular.
+Ich freue mich auf Ihre Nachricht und stehe Ihnen gerne für ein **kostenloses 30-minütiges Beratungsgespräch** zur Verfügung. Kontaktieren Sie mich telefonisch, per E-Mail oder nutzen Sie das untenstehende Kontaktformular.
+
+---
+
+## Kontaktdaten
 
 **📧 E-Mail:** [ar.moltmannwillisch@gmail.com](mailto:ar.moltmannwillisch@gmail.com)  
-*Ich antworte in der Regel innerhalb von 24 Stunden*
+*Antwort in der Regel innerhalb von 24 Stunden*
 
 **📞 Telefon:** [+49 (0) 172 65 29 460](tel:+4917265229460)  
 *Mo-Fr 9:00-18:00 Uhr, gerne auch per WhatsApp*

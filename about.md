@@ -4,12 +4,29 @@ title: Über mich
 permalink: /about/
 ---
 
-# Anne-Ruth Moltmann-Willisch, LL.M.
+# Über mich
+
+## Anne-Ruth Moltmann-Willisch, LL.M.
 *Richterin am Landgericht a.D., Mediatorin*
 
-Als erfahrene Juristin und Mediatorin verbinde ich langjährige Erfahrung im Gerichtswesen mit modernen Ansätzen der Konfliktlösung.
+Als erfahrene Juristin und Mediatorin verbinde ich langjährige Erfahrung im Gerichtswesen mit modernen Ansätzen der Konfliktlösung. Mein Weg von der Richterin zur Mediatorin spiegelt die Entwicklung wider, wie Konflikte heute effektiver und nachhaltiger gelöst werden können.
 
-Mein Weg von der Richterin zur Mediatorin spiegelt die Entwicklung wider, wie Konflikte heute effektiver und nachhaltiger gelöst werden können.
+---
+
+## Meine Philosophie
+
+> *"Als Richterin hatte ich die Aufgabe, Konflikte zu entscheiden. Als Mediatorin arbeite ich mit den Parteien zusammen, um eine Lösung ihres Konfliktes durch ein besseres Verständnis ihrer widerstreitenden Interessen zu erreichen."*
+
+Diese Erfahrung aus beiden Welten - der entscheidenden Rechtsprechung und der vermittelnden Mediation - ermöglicht es mir, Konflikte aus verschiedenen Perspektiven zu betrachten und die jeweils passende Lösungsstrategie zu entwickeln.
+
+### Warum Mediation?
+
+Die moderne Rechtsprechung hat erkannt, dass nicht jeder Konflikt durch eine richterliche Entscheidung optimal gelöst wird. Mediation bietet die Möglichkeit:
+
+- **Selbstbestimmte Lösungen** zu entwickeln, die alle Parteien mittragen können
+- **Beziehungen zu erhalten** statt sie durch Gerichtsverfahren zu belasten  
+- **Zeit und Kosten zu sparen** durch effiziente Konfliktbearbeitung
+- **Nachhaltige Vereinbarungen** zu treffen, die langfristig Bestand haben
 
 ## Beruflicher Werdegang
 
@@ -28,11 +45,7 @@ Mein Weg von der Richterin zur Mediatorin spiegelt die Entwicklung wider, wie Ko
 **Supervisorin** - Begleitung von Fachkräften in der Mediation  
 **Schiedsrichterin** - Entscheidung streitiger Angelegenheiten im Schiedsverfahren
 
-## Meine Philosophie
-
-> *"Als Richterin hatte ich die Aufgabe Konflikte zu entscheiden. Als Mediatorin arbeite ich mit den Parteien zusammen, um eine Lösung ihres Konfliktes durch ein besseres Verständnis ihrer widerstreitenden Interessen zu erreichen."*
-
-Diese Erfahrung aus beiden Welten - der entscheidenden Rechtsprechung und der vermittelnden Mediation - ermöglicht es mir, Konflikte aus verschiedenen Perspektiven zu betrachten und die jeweils passende Lösungsstrategie zu entwickeln.
+---
 
 ## Fachliche Expertise
 
@@ -51,19 +64,16 @@ Diese Erfahrung aus beiden Welten - der entscheidenden Rechtsprechung und der ve
 - Forschung und Entwicklung im Bereich Konfliktmanagement
 - Regelmäßige Fachvorträge und Publikationen
 
-## Warum Mediation?
+---
 
-Die moderne Rechtsprechung hat erkannt, dass nicht jeder Konflikt durch eine richterliche Entscheidung optimal gelöst wird. Mediation bietet die Möglichkeit:
-
-- **Selbstbestimmte Lösungen** zu entwickeln, die alle Parteien mittragen können
-- **Beziehungen zu erhalten** statt sie durch Gerichtsverfahren zu belasten  
-- **Zeit und Kosten zu sparen** durch effiziente Konfliktbearbeitung
-- **Nachhaltige Vereinbarungen** zu treffen, die langfristig Bestand haben
+---
 
 ## Kontakt
 
-Ich freue mich darauf, Sie bei der Lösung Ihrer Konflikte zu unterstützen. Kontaktieren Sie mich gerne für ein unverbindliches Beratungsgespräch.
+Ich freue mich darauf, Sie bei der Lösung Ihrer Konflikte zu unterstützen. 
 
-**E-Mail**: [ar.moltmannwillisch@gmail.com](mailto:ar.moltmannwillisch@gmail.com)  
-**Telefon**: [+49 (0) 172 65 29 460](tel:+4917265229460)  
-**Web**: [www.moltmann-willisch.de](http://www.moltmann-willisch.de)
+**[Vereinbaren Sie ein kostenloses Beratungsgespräch](contact.html)**
+
+**E-Mail:** [ar.moltmannwillisch@gmail.com](mailto:ar.moltmannwillisch@gmail.com)  
+**Telefon:** [+49 (0) 172 65 29 460](tel:+4917265229460)  
+**Website:** [www.moltmann-willisch.de](http://www.moltmann-willisch.de)

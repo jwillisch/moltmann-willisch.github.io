@@ -3,43 +3,41 @@ layout: default
 title: Willkommen
 ---
 
-# Mediation ist die Kunst, Konflikte durch Verständigung zu lösen
+# Mediationskanzlei Moltmann-Willisch
 
-**Professionelle Konfliktlösung durch Anne-Ruth Moltmann-Willisch, LL.M.**  
+## Professionelle Konfliktlösung durch Mediation
+
+**Anne-Ruth Moltmann-Willisch, LL.M.**  
 *Ehemalige Richterin am Landgericht • Erfahrene Mediatorin • Schlichterin*
 
-[Beratungstermin vereinbaren](contact.html){: .btn}
+---
 
-## Ihre Expertin für Mediation und Konfliktlösung
+### Warum Mediation?
 
-Als ehemalige Richterin am Landgericht Berlin hatte ich die Aufgabe, Konflikte zu **entscheiden**. Als Mediatorin arbeite ich mit den Parteien zusammen, um eine Lösung ihres Konfliktes durch ein besseres Verständnis ihrer widerstreitenden Interessen zu **erreichen**.
+Mediation ist die Kunst, Konflikte durch Verständigung zu lösen. Als ehemalige Richterin hatte ich die Aufgabe, Konflikte zu **entscheiden**. Als Mediatorin arbeite ich mit den Parteien zusammen, um eine Lösung durch besseres Verständnis zu **erreichen**.
+
+### Meine Expertise
 
 Mit über einem Jahrzehnt Erfahrung in der gerichtlichen Mediation und als Koordinatorin für Güterichterverfahren an den Berliner Zivilgerichten bringe ich umfassende Expertise in die außergerichtliche Konfliktlösung ein.
 
-### Meine Leistungen
+---
 
-**🤝 Mediation**  
-Lösungsorientierte Mediationsgespräche zwischen Konfliktparteien zur einvernehmlichen Beilegung von Streitigkeiten.
+## Schnelle Navigation
 
-**💼 Beratung**  
-Orientierung und Einschätzung von Handlungsoptionen in Konfliktsituationen durch erfahrene Beratung.
+**[Über mich](about.html)** - Lernen Sie meine berufliche Laufbahn und Philosophie kennen
 
-**⚖️ Schlichtung**  
-Unparteiische transparente Interessenabwägung mit Lösungsvorschlägen für komplexe Streitfälle.
+**[Leistungen](services.html)** - Detaillierte Informationen zu Mediation, Beratung, Schlichtung und Moderation
 
-**👥 Moderation**  
-Strukturierte Gesprächsleitung in größeren Gruppen oder Organisationen zur Konfliktbewältigung.
+**[Kontakt](contact.html)** - Vereinbaren Sie ein kostenloses Beratungsgespräch
 
-## Spezialisierungsgebiete
+**[Blog](blog.html)** - Aktuelle Beiträge zu Mediation und Konfliktlösung
 
-- **Gesellschaftsrecht** - Konflikte zwischen Gesellschaftern und in Unternehmen
-- **Bauen & Immobilien** - Bau- und Nachbarschaftsstreitigkeiten
-- **Organisationen & Vereine** - Interne Konflikte und Strukturprobleme
-- **Familie & Partnerschaft** - Familiäre Auseinandersetzungen und Trennungskonflikte
-- **Nachbarschaftsstreitigkeiten** - Lösungen für nachbarschaftliche Probleme
+---
 
-## Kontakt aufnehmen
+## Kostenloses Erstgespräch
 
-**📧 E-Mail:** [ar.moltmannwillisch@gmail.com](mailto:ar.moltmannwillisch@gmail.com)  
-**📞 Telefon:** [+49 (0) 172 65 29 460](tel:+4917265229460)  
-**🌐 Website:** [www.moltmann-willisch.de](http://www.moltmann-willisch.de)
+Lernen Sie mich und meine Arbeitsweise in einem unverbindlichen 30-minütigen Gespräch kennen.
+
+**[Beratungstermin vereinbaren](contact.html)**
+
+**📞 [+49 (0) 172 65 29 460](tel:+4917265229460)**
