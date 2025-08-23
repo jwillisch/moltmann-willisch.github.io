@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: Kontakt
 permalink: /contact/
 ---
@@ -8,28 +8,14 @@ permalink: /contact/
 
 Ich freue mich auf Ihre Nachricht und stehe Ihnen gerne für ein unverbindliches Beratungsgespräch zur Verfügung. Kontaktieren Sie mich telefonisch, per E-Mail oder nutzen Sie das untenstehende Kontaktformular.
 
-<div class="contact-info">
-  <div class="contact-item">
-    <div class="contact-icon">📧</div>
-    <h4>E-Mail</h4>
-    <p><a href="mailto:ar.moltmannwillisch@gmail.com">ar.moltmannwillisch@gmail.com</a></p>
-    <p><small>Ich antworte in der Regel innerhalb von 24 Stunden</small></p>
-  </div>
-  
-  <div class="contact-item">
-    <div class="contact-icon">📞</div>
-    <h4>Telefon</h4>
-    <p><a href="tel:+4917265229460">+49 (0) 172 65 29 460</a></p>
-    <p><small>Mo-Fr 9:00-18:00 Uhr, gerne auch per WhatsApp</small></p>
-  </div>
-  
-  <div class="contact-item">
-    <div class="contact-icon">🌐</div>
-    <h4>Website</h4>
-    <p><a href="http://www.moltmann-willisch.de" target="_blank">www.moltmann-willisch.de</a></p>
-    <p><small>Weitere Informationen und Referenzen</small></p>
-  </div>
-</div>
+**📧 E-Mail:** [ar.moltmannwillisch@gmail.com](mailto:ar.moltmannwillisch@gmail.com)  
+*Ich antworte in der Regel innerhalb von 24 Stunden*
+
+**📞 Telefon:** [+49 (0) 172 65 29 460](tel:+4917265229460)  
+*Mo-Fr 9:00-18:00 Uhr, gerne auch per WhatsApp*
+
+**🌐 Website:** [www.moltmann-willisch.de](http://www.moltmann-willisch.de)  
+*Weitere Informationen und Referenzen*
 
 ## Kontaktformular
 

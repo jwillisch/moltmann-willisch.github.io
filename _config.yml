@@ -3,8 +3,8 @@ email: ar.moltmannwillisch@gmail.com
 description: >-
   Professionelle Mediation und Konfliktlösung durch Anne-Ruth Moltmann-Willisch, LL.M.
   Ehemalige Richterin am Landgericht mit langjähriger Erfahrung in Mediation und Schlichtung.
-baseurl: ""
-url: "https://moltmann-willisch.github.io"
+baseurl: "/moltmann-willisch.github.io"
+url: "https://jwillisch.github.io"
 
 # Author information
 author:
@@ -16,16 +16,12 @@ author:
 
 # Build settings
 markdown: kramdown
-theme: minima
+remote_theme: pages-themes/minimal@v0.2.0
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-
-# Languages
-languages: [de, en]
-default_lang: de
-exclude_from_localization: ["assets", "_sass", "Gemfile"]
+  - jekyll-remote-theme
 
 # Navigation
 header_pages:
@@ -35,15 +31,8 @@ header_pages:
   - contact.md
   - blog.html
 
-# Collections
-collections:
-  services:
-    output: true
-    permalink: /:collection/:name/
-
-# Pagination
-paginate: 5
-paginate_path: "/blog/page:num/"
+# Show excerpts on blog
+show_excerpts: true
 
 # Exclude from processing
 exclude:

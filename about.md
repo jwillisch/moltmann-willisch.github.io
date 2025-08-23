@@ -1,67 +1,32 @@
 ---
-layout: page
+layout: default
 title: Über mich
 permalink: /about/
 ---
 
-<div class="profile-header">
-  <h1>Anne-Ruth Moltmann-Willisch, LL.M.</h1>
-  <p class="profile-subtitle">Richterin am Landgericht a.D., Mediatorin</p>
-</div>
+# Anne-Ruth Moltmann-Willisch, LL.M.
+*Richterin am Landgericht a.D., Mediatorin*
 
-<div class="intro-section">
-  <p class="lead-text">Als erfahrene Juristin und Mediatorin verbinde ich langjährige Erfahrung im Gerichtswesen mit modernen Ansätzen der Konfliktlösung.</p>
-  <p>Mein Weg von der Richterin zur Mediatorin spiegelt die Entwicklung wider, wie Konflikte heute effektiver und nachhaltiger gelöst werden können.</p>
-</div>
+Als erfahrene Juristin und Mediatorin verbinde ich langjährige Erfahrung im Gerichtswesen mit modernen Ansätzen der Konfliktlösung.
+
+Mein Weg von der Richterin zur Mediatorin spiegelt die Entwicklung wider, wie Konflikte heute effektiver und nachhaltiger gelöst werden können.
 
 ## Beruflicher Werdegang
 
-<div class="timeline-section">
-  <div class="timeline-item">
-    <div class="timeline-header">
-      <h3>Richterliche Laufbahn</h3>
-      <span class="timeline-period">Bis 2021</span>
-    </div>
-    <ul>
-      <li>Richterin und Güterichterin am Landgericht Berlin</li>
-      <li>Koordinatorin für das Güterichterverfahren an den Berliner Zivilgerichten (2009-2021)</li>
-      <li>Umfangreiche Erfahrung in der Rechtsprechung und gerichtlichen Konfliktbeilegung</li>
-    </ul>
-  </div>
+### Richterliche Laufbahn (Bis 2021)
+- Richterin und Güterichterin am Landgericht Berlin
+- Koordinatorin für das Güterichterverfahren an den Berliner Zivilgerichten (2009-2021)
+- Umfangreiche Erfahrung in der Rechtsprechung und gerichtlichen Konfliktbeilegung
 
-  <div class="timeline-item">
-    <div class="timeline-header">
-      <h3>Mediation und Ausbildung</h3>
-      <span class="timeline-period">Seit 2010</span>
-    </div>
-    <ul>
-      <li>Ausbilderin für Mediation/Güterichterverfahren in Berlin/Brandenburg, Mecklenburg-Vorpommern und für die Deutsche Richterakademie</li>
-      <li>Dozentin und Fachprüferin im Masterstudiengang für Mediation und Konfliktmanagement an der Europa-Universität Viadrina</li>
-      <li>Vorsitzende des Beschwerdeausschusses der GEMA</li>
-    </ul>
-  </div>
+### Mediation und Ausbildung (Seit 2010)
+- Ausbilderin für Mediation/Güterichterverfahren in Berlin/Brandenburg, Mecklenburg-Vorpommern und für die Deutsche Richterakademie
+- Dozentin und Fachprüferin im Masterstudiengang für Mediation und Konfliktmanagement an der Europa-Universität Viadrina
+- Vorsitzende des Beschwerdeausschusses der GEMA
 
-  <div class="timeline-item current">
-    <div class="timeline-header">
-      <h3>Aktuelle Tätigkeit</h3>
-      <span class="timeline-period">Seit 2021</span>
-    </div>
-    <div class="current-roles">
-      <div class="role-card">
-        <h4>Mediatorin</h4>
-        <p>Außergerichtliche Konfliktlösung</p>
-      </div>
-      <div class="role-card">
-        <h4>Supervisorin</h4>
-        <p>Begleitung von Fachkräften in der Mediation</p>
-      </div>
-      <div class="role-card">
-        <h4>Schiedsrichterin</h4>
-        <p>Entscheidung streitiger Angelegenheiten im Schiedsverfahren</p>
-      </div>
-    </div>
-  </div>
-</div>
+### Aktuelle Tätigkeit (Seit 2021)
+**Mediatorin** - Außergerichtliche Konfliktlösung  
+**Supervisorin** - Begleitung von Fachkräften in der Mediation  
+**Schiedsrichterin** - Entscheidung streitiger Angelegenheiten im Schiedsverfahren
 
 ## Meine Philosophie
 

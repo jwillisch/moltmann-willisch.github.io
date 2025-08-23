@@ -1,9 +1,0 @@
-{% assign current_lang = page.lang | default: site.default_lang %}
-{% assign keys = include.key | split: '.' %}
-{% assign translation = site.data.translations[current_lang] %}
-
-{% for key in keys %}
-  {% assign translation = translation[key] %}
-{% endfor %}
-
-{{ translation }}

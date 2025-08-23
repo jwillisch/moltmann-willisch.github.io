@@ -1,23 +1,19 @@
 ---
-layout: page
+layout: default
 title: Leistungen
 permalink: /services/
 ---
 
-<div class="services-intro">
-  <h1>Meine Leistungen</h1>
-  <p class="lead-text">Als erfahrene Mediatorin und ehemalige Richterin biete ich verschiedene Formen der Konfliktbearbeitung an.</p>
-  <p>Je nach Konfliktart und Ihren Bedürfnissen finden wir gemeinsam den passenden Weg zur Lösung.</p>
-</div>
+# Meine Leistungen
 
-<div class="service-detailed">
-  <div class="service-icon-large">💼</div>
-  <div class="service-content">
-    <h2>Beratung</h2>
-    <p class="service-tagline">Orientierung und Einschätzung von Handlungsoptionen in Konflikten</p>
-    <p>Manchmal ist es hilfreich, eine erste professionelle Einschätzung der Konfliktsituation zu erhalten, bevor weitere Schritte eingeleitet werden.</p>
-  </div>
-</div>
+Als erfahrene Mediatorin und ehemalige Richterin biete ich verschiedene Formen der Konfliktbearbeitung an.
+
+Je nach Konfliktart und Ihren Bedürfnissen finden wir gemeinsam den passenden Weg zur Lösung.
+
+## 💼 Beratung
+*Orientierung und Einschätzung von Handlungsoptionen in Konflikten*
+
+Manchmal ist es hilfreich, eine erste professionelle Einschätzung der Konfliktsituation zu erhalten, bevor weitere Schritte eingeleitet werden.
 
 ### Was bietet eine Beratung?
 - **Situationsanalyse**: Strukturierte Erfassung des Konflikts und der beteiligten Interessen
@@ -27,7 +23,7 @@ permalink: /services/
 
 ---
 
-## Mediation
+## 🤝 Mediation
 **Lösungsorientierte Mediationsgespräche zwischen Konfliktparteien**
 
 Die Mediation ist ein strukturiertes Verfahren zur außergerichtlichen Konfliktlösung, bei dem ich als neutrale Dritte die Parteien dabei unterstütze, selbst eine Lösung für ihren Konflikt zu finden.
@@ -48,7 +44,7 @@ Die Mediation ist ein strukturiertes Verfahren zur außergerichtlichen Konfliktl
 
 ---
 
-## Moderation
+## 👥 Moderation
 **Strukturierte Gesprächsleitung in größeren Gruppen oder Organisationen**
 
 Bei Konflikten in Teams, Organisationen oder größeren Gruppen kann eine professionelle Moderation helfen, konstruktive Gespräche zu führen und gemeinsame Lösungen zu entwickeln.
@@ -62,7 +58,7 @@ Bei Konflikten in Teams, Organisationen oder größeren Gruppen kann eine profes
 
 ---
 
-## Schlichtung
+## ⚖️ Schlichtung
 **Unparteiische transparente Interessenabwägung mit Lösungsvorschlägen**
 
 Wenn eine einvernehmliche Lösung in der Mediation nicht erreicht werden kann, bietet die Schlichtung eine Alternative zwischen Mediation und Gerichtsverfahren.
