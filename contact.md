@@ -23,11 +23,18 @@ Ich freue mich auf Ihre Nachricht und stehe Ihnen gerne für ein **kostenloses 3
 
 ## Kontaktformular
 
-<form class="contact-form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
-  <input type="hidden" name="form-name" value="contact" />
-  <p style="display: none;">
-    <label>Don't fill this out if you're human: <input name="bot-field" /></label>
-  </p>
+<div id="success-message" class="success-message" style="display: none;">
+  <h3>✅ Nachricht erfolgreich gesendet!</h3>
+  <p>Vielen Dank für Ihre Nachricht. Ich werde mich in der Regel innerhalb von 24 Stunden bei Ihnen melden.</p>
+  <button type="button" onclick="showForm()" class="new-message-btn">Neue Nachricht senden</button>
+</div>
+
+<form id="contact-form" class="contact-form" method="POST" action="https://api.web3forms.com/submit">
+  <input type="hidden" name="access_key" value="eb558e5f-6473-4b34-836b-fcce0326d612" />
+  <input type="hidden" name="subject" value="Neue Nachricht von der Website" />
+  <input type="hidden" name="from_name" value="Mediationskanzlei Website" />
+  <!-- Honeypot for spam protection -->
+  <input type="checkbox" name="botcheck" class="hidden" style="display: none;" />
   
   <div class="form-group">
     <label for="name">Name *</label>
@@ -69,7 +76,7 @@ Ich freue mich auf Ihre Nachricht und stehe Ihnen gerne für ein **kostenloses 3
   <div class="form-group">
     <label>
       <input type="checkbox" name="privacy" required>
-      Ich habe die <a href="/privacy">Datenschutzerklärung</a> gelesen und akzeptiere diese. *
+      Ich habe die <a href="{{ site.baseurl }}/privacy">Datenschutzerklärung</a> gelesen und akzeptiere diese. *
     </label>
   </div>
   
@@ -112,3 +119,59 @@ Nicht jeder Konflikt ist für eine Mediation geeignet. Die Bereitschaft aller Pa
 ---
 
 Ich freue mich darauf, Sie kennenzulernen und Ihnen bei der Lösung Ihres Konflikts zu helfen!
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('contact-form');
+    const successMessage = document.getElementById('success-message');
+    
+    if (form) {
+        form.addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const submitBtn = form.querySelector('.submit-btn');
+            const originalBtnText = submitBtn.textContent;
+            
+            // Show loading state
+            submitBtn.textContent = 'Wird gesendet...';
+            submitBtn.disabled = true;
+            
+            try {
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                if (response.ok) {
+                    // Hide form and show success message
+                    form.style.display = 'none';
+                    successMessage.style.display = 'block';
+                    
+                    // Clear form for next use
+                    form.reset();
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                alert('Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es erneut oder kontaktieren Sie uns direkt per E-Mail.');
+            } finally {
+                // Reset button
+                submitBtn.textContent = originalBtnText;
+                submitBtn.disabled = false;
+            }
+        });
+    }
+});
+
+function showForm() {
+    const form = document.getElementById('contact-form');
+    const successMessage = document.getElementById('success-message');
+    
+    successMessage.style.display = 'none';
+    form.style.display = 'block';
+    
+    // Scroll to form
+    form.scrollIntoView({ behavior: 'smooth' });
+}
+</script>
