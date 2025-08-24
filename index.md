@@ -3,8 +3,6 @@ layout: default
 title: Willkommen
 ---
 
-# Mediationskanzlei Moltmann-Willisch
-
 ## Professionelle Konfliktlösung durch Mediation
 
 **Anne-Ruth Moltmann-Willisch, LL.M.**  
@@ -21,8 +19,17 @@ Mediation ist die Kunst, Konflikte durch Verständigung zu lösen. Als ehemalige
 Mit über einem Jahrzehnt Erfahrung in der gerichtlichen Mediation und als Koordinatorin für Güterichterverfahren an den Berliner Zivilgerichten bringe ich umfassende Expertise in die außergerichtliche Konfliktlösung ein.
 
 ---
+## Kostenloses Erstgespräch
 
-## Schnelle Navigation
+Lernen Sie mich und meine Arbeitsweise in einem unverbindlichen 30-minütigen Gespräch kennen.
+
+**[Beratungstermin vereinbaren](contact.html)**
+
+**📞 [+49 (0) 172 65 29 460](tel:+4917265229460)**
+
+---
+
+## Navigation
 
 **[Über mich](about.html)** - Lernen Sie meine berufliche Laufbahn und Philosophie kennen
 
@@ -32,12 +39,3 @@ Mit über einem Jahrzehnt Erfahrung in der gerichtlichen Mediation und als Koord
 
 **[Blog](blog.html)** - Aktuelle Beiträge zu Mediation und Konfliktlösung
 
----
-
-## Kostenloses Erstgespräch
-
-Lernen Sie mich und meine Arbeitsweise in einem unverbindlichen 30-minütigen Gespräch kennen.
-
-**[Beratungstermin vereinbaren](contact.html)**
-
-**📞 [+49 (0) 172 65 29 460](tel:+4917265229460)**
