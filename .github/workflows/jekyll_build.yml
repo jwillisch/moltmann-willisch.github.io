@@ -1,37 +1,52 @@
-name: Build Jekyll site to GitHub Pages
+name: Build and Test Jekyll Site
 
 on:
-  push:
-    branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+  push:
+    branches-ignore: [ "main" ]
 
 permissions:
   contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: "pages"
-  cancel-in-progress: false
 
 jobs:
-  build:
+  build-test:
+    name: Build and validate Jekyll site
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.1'
           bundler-cache: true
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v4
-      - name: Build with Jekyll
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
+          
+      - name: Install dependencies
+        run: bundle install
+        
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --strict_front_matter --verbose
         env:
           JEKYLL_ENV: production
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+          
+      - name: Test HTML output
+        run: |
+          # Basic validation that key pages exist
+          test -f _site/index.html
+          test -f _site/about/index.html
+          test -f _site/services/index.html
+          test -f _site/contact/index.html
+          test -f _site/blog/index.html
+          test -f _site/privacy/index.html
+          echo "✅ All key pages generated successfully"
+          
+      - name: Check for broken internal links
+        run: |
+          # Simple grep check for common broken link patterns
+          if grep -r "href=\"#\"" _site/ || grep -r "href=\"\"" _site/; then
+            echo "❌ Found empty href attributes"
+            exit 1
+          fi
+          echo "✅ No obvious broken links found"
