@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Willkommen
+lang: de
 ---
 
 ## Professionelle Konfliktlösung durch Mediation

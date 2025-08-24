@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Datenschutzerklärung
+lang: de
 permalink: /privacy/
 ---
 

@@ -21,15 +21,21 @@
           <img src="{{site.logo | relative_url}}" alt="Logo" />
         {% endif %}
 
-        <p>{{ site.description | default: site.github.project_tagline }}</p>
+        {% assign t = site.data.translations[page.lang] | default: site.data.translations[site.default_language] %}
+        <p>{{ t.site_description | default: site.description | default: site.github.project_tagline }}</p>
 
         <nav>
+          {% assign t = site.data.translations[page.lang] | default: site.data.translations[site.default_language] %}
+          {% assign lang_prefix = "" %}
+          {% if page.lang and page.lang != site.default_language %}
+            {% assign lang_prefix = "/" | append: page.lang %}
+          {% endif %}
           <ul>
-            <li><a href="{{ "/" | relative_url }}">Home</a></li>
-            <li><a href="{{ "/about/" | relative_url }}">Über mich</a></li>
-            <li><a href="{{ "/services/" | relative_url }}">Leistungen</a></li>
-            <li><a href="{{ "/contact/" | relative_url }}">Kontakt</a></li>
-            <li><a href="{{ "/blog/" | relative_url }}">Blog</a></li>
+            <li><a href="{{ lang_prefix | append: "/" | relative_url }}">{{ t.nav.home }}</a></li>
+            <li><a href="{{ lang_prefix | append: "/about/" | relative_url }}">{{ t.nav.about }}</a></li>
+            <li><a href="{{ lang_prefix | append: "/services/" | relative_url }}">{{ t.nav.services }}</a></li>
+            <li><a href="{{ lang_prefix | append: "/contact/" | relative_url }}">{{ t.nav.contact }}</a></li>
+            <li><a href="{{ lang_prefix | append: "/blog/" | relative_url }}">{{ t.nav.blog }}</a></li>
           </ul>
         </nav>
 
@@ -42,6 +48,7 @@
       <footer>
         <p>© 2024 {{ site.author.name }} - {{ site.author.title }}</p>
         <p>Kontakt: <a href="mailto:{{ site.email }}">{{ site.email }}</a> | <a href="tel:{{ site.author.phone }}">{{ site.author.phone }}</a></p>
+        {% include language-switcher.html %}
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>

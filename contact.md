@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Kontakt
+lang: de
 permalink: /contact/
 ---
 
