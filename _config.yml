@@ -23,6 +23,16 @@ plugins:
   - jekyll-seo-tag
   - jekyll-remote-theme
 
+# Multilingual configuration
+languages: ["de", "en"]
+default_language: "de"
+exclude_from_localization: ["assets", "scripts"]
+
+# Language names for UI
+language_names:
+  de: "Deutsch"
+  en: "English"
+
 # Navigation
 header_pages:
   - index.md

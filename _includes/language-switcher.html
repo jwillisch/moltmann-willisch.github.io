@@ -1,0 +1,32 @@
+<!-- Language Switcher -->
+<div class="language-switcher">
+  {% assign current_lang = page.lang | default: site.default_language %}
+  
+  {% for lang in site.languages %}
+    {% if lang != current_lang %}
+      {% comment %} Build URL for the other language {% endcomment %}
+      {% if lang == site.default_language %}
+        {% comment %} Switch to German (default language) {% endcomment %}
+        {% if page.url == '/index.html' or page.url == '/' %}
+          {% assign lang_url = '/' %}
+        {% elsif page.url contains '/en/' %}
+          {% assign lang_url = page.url | replace: '/en/', '/' %}
+        {% else %}
+          {% assign lang_url = page.url %}
+        {% endif %}
+      {% else %}
+        {% comment %} Switch to English {% endcomment %}
+        {% if page.url == '/index.html' or page.url == '/' %}
+          {% assign lang_url = '/en/' %}
+        {% else %}
+          {% assign lang_url = '/en' | append: page.url %}
+        {% endif %}
+      {% endif %}
+      
+      <a href="{{ lang_url | relative_url }}" class="lang-switch">{{ site.language_names[lang] }}</a>
+    {% else %}
+      <span class="lang-current">{{ site.language_names[lang] }}</span>
+    {% endif %}
+    {% unless forloop.last %}<span class="lang-separator"> | </span>{% endunless %}
+  {% endfor %}
+</div>
