@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Leistungen
+lang: de
 permalink: /services/
 ---
 

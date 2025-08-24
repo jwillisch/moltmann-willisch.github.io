@@ -1,0 +1,32 @@
+---
+layout: default
+title: Blog
+lang: en
+permalink: /en/blog/
+---
+
+# Mediation & Conflict Resolution Blog
+
+<div class="blog-intro">
+  <p><em>Insights, experiences, and current developments in mediation</em></p>
+</div>
+
+Here you'll find regular articles on mediation, conflict resolution, and current developments in the field of out-of-court dispute resolution.
+
+{% if site.posts.size > 0 %}
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+    {% if post.excerpt %}
+      {{ post.excerpt }}
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
+{% else %}
+<div class="no-posts">
+  <p>No blog posts yet. Please check back soon!</p>
+</div>
+{% endif %}

@@ -386,3 +386,44 @@ footer {
     }
   }
 }
+
+// Language Switcher Styling - Discrete footer placement
+.language-switcher {
+  text-align: center;
+  margin: 1rem 0 0 0;
+  font-size: 0.75rem;
+  color: var(--text-light);
+  
+  .lang-switch {
+    color: var(--text-light);
+    text-decoration: none;
+    font-weight: normal;
+    transition: color 0.3s ease;
+    
+    &:hover {
+      color: var(--brand-sage);
+      text-decoration: underline;
+    }
+  }
+  
+  .lang-current {
+    color: var(--brand-sage-dark);
+    font-weight: 500;
+  }
+  
+  .lang-separator {
+    color: var(--text-light);
+    margin: 0 0.3rem;
+  }
+}
+
+// Responsive language switcher
+@media (max-width: 768px) {
+  .language-switcher {
+    font-size: 0.7rem;
+    
+    .lang-separator {
+      margin: 0 0.25rem;
+    }
+  }
+}
