@@ -387,6 +387,34 @@ footer {
   }
 }
 
+// Logo Styling
+.logo-container {
+  text-align: center;
+  margin: 1rem 0 1.5rem 0;
+  
+  .site-logo {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px; // Limit height for better proportions
+    width: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+// Responsive logo sizing
+@media (max-width: 768px) {
+  .logo-container .site-logo {
+    max-height: 120px; // Smaller on mobile
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .logo-container .site-logo {
+    max-height: 150px; // Medium size for tablets
+  }
+}
+
 // Language Switcher Styling - Discrete footer placement
 .language-switcher {
   text-align: center;
