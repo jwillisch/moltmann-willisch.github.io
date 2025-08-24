@@ -2,6 +2,7 @@
 ---
 
 @import "{{ site.theme }}";
+@import "custom";
 
 nav ul {
   list-style: none;
@@ -13,21 +14,4 @@ nav li {
   margin-bottom: 5px;
 }
 
-nav a {
-  display: block;
-  padding: 8px 0;
-  color: #267CB9;
-  text-decoration: none;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-nav a:hover {
-  color: #069;
-  font-weight: bold;
-}
-
-nav a:active,
-nav a:focus {
-  color: #069;
-  font-weight: bold;
-}
+/* Navigation styles now handled in custom.scss */
