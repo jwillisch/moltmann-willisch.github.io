@@ -348,3 +348,41 @@ a[href^="tel:"] {
     margin: 0;
   }
 }
+
+// Professional footer styling
+footer {
+  border-top: 2px solid var(--brand-orange);
+  padding-top: 1.5rem;
+  margin-top: 3rem;
+  
+  p {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    text-align: center;
+    margin: 0.5rem 0;
+    
+    &:first-child {
+      font-weight: 600;
+      color: var(--brand-sage-dark);
+    }
+  }
+  
+  a {
+    color: var(--brand-orange) !important;
+    
+    &:hover {
+      color: #d35400 !important;
+    }
+  }
+}
+
+// Responsive footer
+@media (max-width: 768px) {
+  footer {
+    text-align: left;
+    
+    p {
+      text-align: left;
+    }
+  }
+}
