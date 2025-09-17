@@ -10,6 +10,8 @@ permalink: /about/
 ## Anne-Ruth Moltmann-Willisch, LL.M.
 *Richterin am Landgericht a.D., Mediatorin*
 
+<img src="{{ "/assets/images/am_photo.jpeg" | relative_url }}" alt="Anne-Ruth Moltmann-Willisch" class="about-portrait">
+
 Als erfahrene Juristin und Mediatorin verbinde ich langjährige Erfahrung im Gerichtswesen mit modernen Ansätzen der Konfliktlösung. Mein Weg von der Richterin zur Mediatorin spiegelt die Entwicklung wider, wie Konflikte heute effektiver und nachhaltiger gelöst werden können.
 
 ---
