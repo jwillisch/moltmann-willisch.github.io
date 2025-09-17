@@ -449,9 +449,46 @@ footer {
 @media (max-width: 768px) {
   .language-switcher {
     font-size: 0.7rem;
-    
+
     .lang-separator {
       margin: 0 0.25rem;
     }
+  }
+}
+
+// About page portrait styling
+.about-portrait {
+  float: right;
+  max-width: 200px;
+  width: 40%;
+  height: auto;
+  margin: 0 0 1rem 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(156, 175, 136, 0.2);
+  border: 2px solid var(--brand-sage-light);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(156, 175, 136, 0.3);
+  }
+}
+
+// Responsive portrait styling
+@media (max-width: 768px) {
+  .about-portrait {
+    float: none;
+    display: block;
+    margin: 1rem auto 2rem auto;
+    max-width: 250px;
+    width: 80%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about-portrait {
+    max-width: 180px;
+    width: 25%;
+    margin-left: 1.5rem;
   }
 }
