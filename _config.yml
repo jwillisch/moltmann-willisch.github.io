@@ -62,8 +62,5 @@ exclude:
   - vendor/ruby/
   - external_resources/
 
-# Color scheme customization
-minima:
-  skin: auto
-  social_links:
-    - { platform: email, user_url: "mailto:ar.moltmannwillisch@gmail.com" }
+# Theme customization
+# Using minimal theme with custom styling
