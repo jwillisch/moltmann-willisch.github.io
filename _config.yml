@@ -11,7 +11,6 @@ author:
   name: Anne-Ruth Moltmann-Willisch, LL.M.
   title: Richterin am Landgericht a.D., Mediatorin
   email: ar.moltmannwillisch@gmail.com
-  phone: "+49 (0) 172 65 29 460"
   website: "www.moltmann-willisch.de"
 
 # Build settings
@@ -64,3 +63,10 @@ exclude:
 
 # Theme customization
 # Using minimal theme with custom styling
+
+# PostHog Analytics Configuration
+# Default settings - override in _config_posthog_local.yml (excluded from git)
+# See _config_posthog.yml template for setup instructions
+posthog_enabled: false
+posthog_api_key: ""
+posthog_host: "https://app.posthog.com"
