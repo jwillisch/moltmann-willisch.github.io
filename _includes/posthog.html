@@ -1,0 +1,190 @@
+{% comment %} PostHog Analytics — Minimal Integration Tracks page views
+(automatic) and contact form submissions. Configuration via _config.yml /
+_config_posthog_local.yml. {% endcomment %}
+
+<script>
+    (function () {
+        var posthogApiKey = '{{ site.posthog_api_key | default: "" }}';
+        var posthogHost =
+            '{{ site.posthog_host | default: "https://app.posthog.com" }}';
+        var posthogEnabled =
+            "{{ site.posthog_enabled | default: false }}" === "true";
+
+        if (!posthogEnabled || !posthogApiKey) {
+            console.log("PostHog analytics disabled or not configured");
+            return;
+        }
+
+        !(function (t, e) {
+            var o, n, p, r;
+            e.__SV ||
+                ((window.posthog = e),
+                (e._i = []),
+                (e.init = function (i, s, a) {
+                    function g(t, e) {
+                        var o = e.split(".");
+                        2 == o.length && ((t = t[o[0]]), (e = o[1]));
+                        t[e] = function () {
+                            t.push(
+                                [e].concat(
+                                    Array.prototype.slice.call(arguments, 0),
+                                ),
+                            );
+                        };
+                    }
+                    (((p = t.createElement("script")).type = "text/javascript"),
+                        (p.async = !0),
+                        (p.src = s.api_host + "/static/array.js"),
+                        (r =
+                            t.getElementsByTagName(
+                                "script",
+                            )[0]).parentNode.insertBefore(p, r));
+                    var u = e;
+                    for (
+                        void 0 !== a ? (u = e[a] = []) : (a = "posthog"),
+                            u.people = u.people || [],
+                            u.toString = function (t) {
+                                var e = "posthog";
+                                return (
+                                    "posthog" !== a && (e += "." + a),
+                                    t || (e += " (stub)"),
+                                    e
+                                );
+                            },
+                            u.people.toString = function () {
+                                return u.toString(1) + ".people (stub)";
+                            },
+                            o =
+                                "capture identify alias people.set people.set_once set_config register register_once unregister opt_out_capturing has_opted_out_capturing opt_in_capturing reset isFeatureEnabled onFeatureFlags getFeatureFlag getFeatureFlagPayload reloadFeatureFlags group updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures getActiveMatchingSurveys getSurveys getNextSurveyStep".split(
+                                    " ",
+                                ),
+                            n = 0;
+                        n < o.length;
+                        n++
+                    )
+                        g(u, o[n]);
+                    e._i.push([i, s, a]);
+                }),
+                (e.__SV = 1));
+        })(document, window.posthog || []);
+
+        posthog.init(posthogApiKey, {
+            api_host: posthogHost,
+            respect_dnt: true,
+            capture_pageview: true,
+            capture_pageleave: true,
+        });
+
+        // Enhanced event tracking
+        document.addEventListener("DOMContentLoaded", function () {
+            var currentPage = window.location.pathname;
+
+            // Phase 1: Contact Intent Signals
+
+            // Track phone clicks
+            var phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+            phoneLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    posthog.capture("Phone Clicked", {
+                        page_location: currentPage,
+                    });
+                });
+            });
+
+            // Track email clicks
+            var emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+            emailLinks.forEach(function (link) {
+                link.addEventListener("click", function () {
+                    posthog.capture("Email Clicked", {
+                        page_location: currentPage,
+                    });
+                });
+            });
+
+            // Track contact form interactions
+            var form = document.getElementById("contact-form");
+            if (form) {
+                var formStarted = false;
+
+                // Track form started (first field interaction)
+                var formFields = form.querySelectorAll(
+                    "input, textarea, select",
+                );
+                formFields.forEach(function (field) {
+                    field.addEventListener("focus", function () {
+                        if (!formStarted) {
+                            formStarted = true;
+                            posthog.capture("Contact Form Started");
+                        }
+                    });
+                });
+
+                // Track subject selection
+                var subjectField = document.getElementById("subject");
+                if (subjectField) {
+                    subjectField.addEventListener("change", function () {
+                        var selectedValue = this.value;
+                        if (selectedValue) {
+                            posthog.capture("Contact Form Subject Selected", {
+                                service_category: selectedValue,
+                            });
+                        }
+                    });
+                }
+
+                // Enhanced form submission tracking with subject category
+                form.addEventListener("submit", function () {
+                    var subjectValue = subjectField
+                        ? subjectField.value
+                        : "unknown";
+                    posthog.capture("Contact Form Submitted", {
+                        page: currentPage,
+                        subject_category: subjectValue,
+                    });
+                });
+            }
+
+            // Phase 2: Service Interest Signals
+
+            // Track consultation CTA clicks
+            var ctaLinks = document.querySelectorAll('a[href*="contact"]');
+            ctaLinks.forEach(function (link) {
+                var linkText = link.textContent.toLowerCase();
+                if (
+                    linkText.includes("beratung") ||
+                    linkText.includes("termin")
+                ) {
+                    link.addEventListener("click", function () {
+                        posthog.capture("Consultation CTA Clicked", {
+                            cta_location: currentPage,
+                        });
+                    });
+                }
+            });
+
+            // Track service page viewed
+            if (currentPage.includes("/services")) {
+                posthog.capture("Service Page Viewed", {
+                    referrer_page: document.referrer,
+                });
+            }
+
+            // Phase 3: Credibility Verification
+
+            // Track about page viewed
+            if (currentPage.includes("/about")) {
+                posthog.capture("About Page Viewed", {
+                    came_from: document.referrer,
+                });
+            }
+
+            // Track blog post views (enhanced pageview)
+            if (currentPage.match(/\/\d{4}\/\d{2}\/\d{2}\//)) {
+                var postTitle = document.querySelector("h1, h2");
+                posthog.capture("Blog Post Read", {
+                    post_title: postTitle ? postTitle.textContent : "unknown",
+                });
+            }
+        });
+    })();
+</script>
