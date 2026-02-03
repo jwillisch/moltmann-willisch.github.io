@@ -82,6 +82,5 @@ The website covers these practice areas:
 When adding content:
 - Use professional German language
 - Focus on benefits of mediation over litigation
-- Emphasize the lawyer's judicial background for credibility
 - Include calls-to-action for consultations
 - Maintain GDPR compliance in all forms and policies
