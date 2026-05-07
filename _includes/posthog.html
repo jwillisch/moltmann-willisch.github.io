@@ -71,6 +71,7 @@ _config_posthog_local.yml. {% endcomment %}
         posthog.init(posthogApiKey, {
             api_host: posthogHost,
             respect_dnt: true,
+            opt_out_capturing_by_default: true,
             capture_pageview: true,
             capture_pageleave: true,
         });

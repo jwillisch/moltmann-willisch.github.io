@@ -62,7 +62,34 @@ Soweit innerhalb dieser Datenschutzerklärung keine speziellere Speicherdauer ge
 ### Hinweis zur Datenweitergabe in die USA
 Auf unserer Website sind unter anderem Tools von Unternehmen mit Sitz in den USA eingebunden. Wenn diese Tools aktiv sind, können Ihre personenbezogenen Daten an die US-Server der jeweiligen Unternehmen übertragen werden.
 
-## 4. Datenerfassung auf dieser Website
+## 4. Analyse-Tools
+
+### PostHog
+
+Diese Website nutzt PostHog, einen Webanalysedienst. Anbieter ist die PostHog Inc., mit EU-Datenverarbeitung unter `eu.i.posthog.com`.
+
+**Erfasste Daten:**
+- Seitenaufrufe und Seitenverweildauer
+- Klicks auf Telefon- und E-Mail-Links
+- Interaktionen mit dem Kontaktformular (Start, Themenauswahl, Absendung)
+- Klicks auf Beratungs-Links
+- Technische Daten (Browser, Betriebssystem, Bildschirmauflösung)
+
+**Keine Erfassung von:** Namen, E-Mail-Adressen, Nachrichteninhalten oder sonstigen personenbezogenen Kontaktdaten über PostHog.
+
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. a DSGVO (Einwilligung). Die Analyse erfolgt nur nach Ihrer Einwilligung über unseren Cookie-Hinweis.
+
+**Speicherdauer:** Die Daten werden nach 12 Monaten automatisch gelöscht.
+
+**Serverstandort:** Europäische Union (Frankfurt). Es findet keine Datenübertragung in die USA statt.
+
+**Do Not Track:** PostHog respektiert die „Do Not Track"-Einstellung Ihres Browsers. Ist diese aktiviert, erfolgt keine Datenerfassung.
+
+**Opt-Out:** Sie können die Erfassung jederzeit über Ihre Cookie-Einstellungen widerrufen oder die „Do Not Track"-Funktion Ihres Browsers aktivieren.
+
+**Weitere Informationen:** [PostHog Datenschutzerklärung](https://posthog.com/privacy)
+
+## 5. Datenerfassung auf dieser Website
 
 ### Server-Log-Dateien
 Der Provider der Seiten erhebt und speichert automatisch Informationen in so genannten Server-Log-Dateien, die Ihr Browser automatisch an uns übermittelt. Dies sind:
@@ -76,14 +103,22 @@ Der Provider der Seiten erhebt und speichert automatisch Informationen in so gen
 
 Eine Zusammenführung dieser Daten mit anderen Datenquellen wird nicht vorgenommen. Die Erfassung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.
 
-### Kontaktformular
-Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben aus dem Anfrageformular inklusive der von Ihnen dort angegebenen Kontaktdaten zwecks Bearbeitung der Anfrage und für den Fall von Anschlussfragen bei uns gespeichert.
+### Kontaktformular (Web3Forms)
+Wenn Sie uns per Kontaktformular Anfragen zukommen lassen, werden Ihre Angaben über den Dienst Web3Forms übermittelt. Anbieter ist Web3Forms (web3forms.com).
 
-Die Verarbeitung dieser Daten erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde.
+**Übermittelte Daten:**
+- Name, E-Mail-Adresse, Telefonnummer (falls angegeben)
+- Betreff und Nachrichteninhalt
 
-Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt. Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.
+**Verarbeitung durch Web3Forms:** Web3Forms leitet Ihre Nachricht per E-Mail an uns weiter. Die Daten werden von Web3Forms nicht dauerhaft gespeichert und nicht für eigene Zwecke verwendet. Weitere Informationen: [Web3Forms Privacy Policy](https://web3forms.com/privacy)
 
-## 5. Ihre Rechte
+**Rechtsgrundlage:** Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit der Erfüllung eines Vertrags zusammenhängt oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist. In allen übrigen Fällen beruht die Verarbeitung auf unserem berechtigten Interesse an der effektiven Bearbeitung der an uns gerichteten Anfragen (Art. 6 Abs. 1 lit. f DSGVO) oder auf Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO) sofern diese abgefragt wurde.
+
+**Speicherdauer:** Die von Ihnen im Kontaktformular eingegebenen Daten verbleiben bei uns, bis Sie uns zur Löschung auffordern, Ihre Einwilligung zur Speicherung widerrufen oder der Zweck für die Datenspeicherung entfällt. Zwingende gesetzliche Bestimmungen – insbesondere Aufbewahrungsfristen – bleiben unberührt.
+
+**Serverstandort:** Web3Forms verarbeitet Daten auf Servern, die ggf. außerhalb der EU liegen. Die Übermittlung erfolgt auf Grundlage von Art. 49 Abs. 1 lit. b DSGVO (Vertragserfüllung).
+
+## 6. Ihre Rechte
 
 ### Auskunft, Löschung und Berichtigung
 Sie haben im Rahmen der geltenden gesetzlichen Bestimmungen jederzeit das Recht auf unentgeltliche Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger und den Zweck der Datenverarbeitung und ggf. ein Recht auf Berichtigung oder Löschung dieser Daten.
@@ -97,7 +132,7 @@ Sie haben das Recht, Daten, die wir auf Grundlage Ihrer Einwilligung oder in Erf
 ### Widerspruch gegen Werbe-E-Mails
 Der Nutzung von im Rahmen der Impressumspflicht veröffentlichten Kontaktdaten zur Übersendung von nicht ausdrücklich angeforderter Werbung und Informationsmaterialien wird hiermit widersprochen.
 
-## 6. Besondere Hinweise für Mediationsverfahren
+## 7. Besondere Hinweise für Mediationsverfahren
 
 ### Verschwiegenheitspflicht
 Als Mediatorin unterliege ich der gesetzlichen Verschwiegenheitspflicht nach § 4 Mediationsgesetz (MediationsG). Alle im Rahmen einer Mediation bekannt gewordenen Informationen werden streng vertraulich behandelt.
@@ -107,6 +142,6 @@ Bei Mediationsverfahren werden nur die für das Verfahren notwendigen Daten erho
 
 ---
 
-**Stand dieser Datenschutzerklärung**: November 2024
+**Stand dieser Datenschutzerklärung**: Mai 2026
 
 Bei Fragen zum Datenschutz kontaktieren Sie mich gerne unter ar.moltmannwillisch@gmail.com
