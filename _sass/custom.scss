@@ -492,3 +492,36 @@ footer {
     margin-left: 1.5rem;
   }
 }
+
+// Cookie Consent Banner — brand color overrides
+#cc-main {
+  --cc-btn-primary-bg: var(--brand-orange);
+  --cc-btn-primary-hover-bg: #d35400;
+  --cc-btn-primary-color: #fff;
+  --cc-btn-secondary-bg: var(--brand-sage);
+  --cc-btn-secondary-hover-bg: var(--brand-sage-dark);
+  --cc-btn-secondary-color: #fff;
+  --cc-toggle-on-bg: var(--brand-sage);
+  --cc-link-color: var(--brand-sage);
+  --cc-separator-border-color: var(--border-light);
+  --cc-bg: #fff;
+  --cc-font-family: inherit;
+}
+
+.footer-legal {
+  margin-top: 0.5rem;
+  font-size: 0.85em;
+
+  a {
+    color: var(--brand-sage) !important;
+
+    &:hover {
+      color: var(--brand-sage-dark) !important;
+    }
+  }
+
+  .separator {
+    margin: 0 0.3em;
+    color: var(--text-light);
+  }
+}

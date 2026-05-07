@@ -46,12 +46,9 @@
       {{ content }}
 
       </section>
-      <footer>
-        <p>© 2024 {{ site.author.name }} - {{ site.author.title }}</p>
-        <p>Kontakt: <a href="mailto:{{ site.email }}">{{ site.email }}</a> | <a href="tel:{{ site.author.phone }}">{{ site.author.phone }}</a></p>
-        {% include language-switcher.html %}
-      </footer>
+      {% include footer.html %}
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
+    {% include cookie-consent.html %}
   </body>
 </html>
