@@ -7,13 +7,13 @@
     <span class="separator">|</span>
     <a href="{{ '/en/privacy/' | relative_url }}">Privacy Policy</a>
     <span class="separator">|</span>
-    <a href="#" data-cc="show-preferencesModal">Cookie Settings</a>
+    <button type="button" data-cc="show-preferencesModal">Cookie Settings</button>
     {% else %}
     <a href="{{ '/impressum/' | relative_url }}">Impressum</a>
     <span class="separator">|</span>
     <a href="{{ '/privacy/' | relative_url }}">Datenschutz</a>
     <span class="separator">|</span>
-    <a href="#" data-cc="show-preferencesModal">Cookie-Einstellungen</a>
+    <button type="button" data-cc="show-preferencesModal">Cookie-Einstellungen</button>
     {% endif %}
   </div>
   {% include language-switcher.html %}
