@@ -23,3 +23,6 @@ external_resources/
 
 # PostHog configuration with secrets
 _config_posthog_local.yml
+
+# Caude Plans
+.claude/plans/

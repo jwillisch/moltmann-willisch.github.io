@@ -1,0 +1,119 @@
+{% comment %} Cookie Consent Banner — orestbida/cookieconsent v3
+Blocks PostHog analytics until user opts in. Bilingual DE/EN. {% endcomment %}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.1.0/dist/cookieconsent.css">
+<script defer src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.1.0/dist/cookieconsent.umd.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var lang = '{{ page.lang | default: site.default_language | default: "de" }}';
+
+    CookieConsent.run({
+        guiOptions: {
+            consentModal: {
+                layout: 'box inline',
+                position: 'bottom right'
+            },
+            preferencesModal: {
+                layout: 'box'
+            }
+        },
+
+        categories: {
+            necessary: {
+                enabled: true,
+                readOnly: true
+            },
+            analytics: {}
+        },
+
+        onConsent: function () {
+            if (CookieConsent.acceptedCategory('analytics')) {
+                if (window.posthog) {
+                    window.posthog.opt_in_capturing();
+                }
+            }
+        },
+
+        onChange: function (param) {
+            if (!window.posthog) return;
+
+            if (param.changedCategories.indexOf('analytics') !== -1) {
+                if (CookieConsent.acceptedCategory('analytics')) {
+                    window.posthog.opt_in_capturing();
+                } else {
+                    window.posthog.opt_out_capturing();
+                }
+            }
+        },
+
+        language: {
+            default: lang,
+            translations: {
+                de: {
+                    consentModal: {
+                        title: 'Cookie-Einstellungen',
+                        description: 'Diese Website verwendet Cookies und Analysetools, um Ihnen das bestmögliche Erlebnis zu bieten. Sie können selbst entscheiden, welche Kategorien Sie zulassen möchten.',
+                        acceptAllBtn: 'Alle akzeptieren',
+                        acceptNecessaryBtn: 'Nur notwendige',
+                        showPreferencesBtn: 'Einstellungen'
+                    },
+                    preferencesModal: {
+                        title: 'Cookie-Einstellungen',
+                        acceptAllBtn: 'Alle akzeptieren',
+                        acceptNecessaryBtn: 'Nur notwendige',
+                        savePreferencesBtn: 'Auswahl speichern',
+                        sections: [
+                            {
+                                title: 'Cookie-Nutzung',
+                                description: 'Wir verwenden Cookies, um die grundlegenden Funktionen der Website sicherzustellen und Ihr Online-Erlebnis zu verbessern. Für jede Kategorie können Sie entscheiden, ob Sie zustimmen möchten.'
+                            },
+                            {
+                                title: 'Notwendige Cookies',
+                                description: 'Diese Cookies sind für das Funktionieren der Website erforderlich und können nicht deaktiviert werden.',
+                                linkedCategory: 'necessary'
+                            },
+                            {
+                                title: 'Analyse-Cookies',
+                                description: 'Wir verwenden PostHog (EU-Server, Frankfurt) zur anonymen Auswertung der Website-Nutzung. Es werden keine personenbezogenen Daten erfasst. <a href="/privacy/">Mehr erfahren</a>',
+                                linkedCategory: 'analytics'
+                            }
+                        ]
+                    }
+                },
+                en: {
+                    consentModal: {
+                        title: 'Cookie Settings',
+                        description: 'This website uses cookies and analytics tools to provide you with the best possible experience. You can choose which categories to allow.',
+                        acceptAllBtn: 'Accept all',
+                        acceptNecessaryBtn: 'Necessary only',
+                        showPreferencesBtn: 'Settings'
+                    },
+                    preferencesModal: {
+                        title: 'Cookie Settings',
+                        acceptAllBtn: 'Accept all',
+                        acceptNecessaryBtn: 'Necessary only',
+                        savePreferencesBtn: 'Save preferences',
+                        sections: [
+                            {
+                                title: 'Cookie Usage',
+                                description: 'We use cookies to ensure the basic functions of the website and to enhance your online experience. You can choose whether to opt in to each category.'
+                            },
+                            {
+                                title: 'Necessary Cookies',
+                                description: 'These cookies are essential for the website to function and cannot be disabled.',
+                                linkedCategory: 'necessary'
+                            },
+                            {
+                                title: 'Analytics Cookies',
+                                description: 'We use PostHog (EU servers, Frankfurt) for anonymous analysis of website usage. No personal data is collected. <a href="/en/privacy/">Learn more</a>',
+                                linkedCategory: 'analytics'
+                            }
+                        ]
+                    }
+                }
+            }
+        }
+    });
+});
+</script>
